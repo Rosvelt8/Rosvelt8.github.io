@@ -1,0 +1,84 @@
+*, ::before, ::after
+{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+.nav-item
+{
+	padding-right: 25px;
+	font-size: 1.4em;
+	color: blue;
+	font-family: serif;
+	color: white !important;
+	display: block;
+	word-spacing: normal;
+	padding-left: 25px;
+}
+.arrière-plan,.nav-link::after
+{
+	content: "";
+	display: block;
+	position: fixed;
+	width: 120px;
+	padding: 0 auto;
+	height: 1px;
+	background: black;
+	transform: scale(0);
+	transition: transform 0.3s ease-in-out;
+}
+.nav-link:hover::after
+{
+	transform: scale(1);
+}
+.nav-link
+{
+	color: white;
+}
+.arpl
+{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-image: url(bg.png);
+	background-repeat: none;
+}
+.service
+.premium
+{
+	width: 10rem;
+	padding-top: 15%;
+}
+.premium1
+{
+	margin-left:3em;
+}
+.premium2
+{
+	margin-left: 49em;
+}
+.welcome
+{
+	position: fixed;
+}
+/*.spc
+{
+	position: fixed;
+	border-radius: 76% 82% 29% 25% / 81% 73% 27% 23%;
+	height: 50rem;
+	widht: 500rem;
+	padding-left: 100px;
+	background: black;
+	color white;
+}*/
+.pied
+{
+	background-color: black;
+	padding-bottom: 0;
+}
+@media screen and (max-width: 1500px)
+{
+	.nav-item{
+		text-align: center;
+	}
+}
